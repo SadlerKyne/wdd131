@@ -83,11 +83,14 @@ nav a:active {
     border-radius: 5%;
     margin-bottom: 1em;
     float: right;
+    margin-right: 15px;
     margin-left: 15px;
 }
 
 .about-me p {
     text-align: left;
+    margin-left: 15px;
+    font-size: 18px
 }
 
 .moab-feature {
@@ -129,10 +132,13 @@ nav a:active {
     margin-bottom: 1em;
     float: left;
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 .moab-feature p {
     text-align: left;
+    margin-right: 15px;
+    font-size: 18px;
 }
 
 .web-resources {
