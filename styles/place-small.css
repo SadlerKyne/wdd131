@@ -1,0 +1,120 @@
+:root {
+    --primary-font: 'Arimo', sans-serif;
+    --primary-text-color: #000000;
+    --primary-bg-color: #FFFFFF;
+    --header-footer-bg-color: #f5f5f7;
+    --section-border-color: #eeeeee;
+    --label-text-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--header-footer-bg-color);
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid var(--section-border-color);
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: var(--primary-text-color);
+}
+
+main {
+    padding: 1em;
+    display: grid;
+    gap: 1.5em;
+}
+
+.hero {
+    margin-bottom: 0.5em;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-section p {
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: center; 
+}
+
+.weather-section p { 
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.data-section,
+.weather-section {
+    border: 1px solid var(--section-border-color);
+    padding: 1em;
+    background-color: var(--primary-bg-color);
+}
+
+.data-section h2,
+.weather-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.5em;
+}
+
+.data-section p,
+.weather-section p {
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.data-section p strong,
+.weather-section p strong {
+    color: var(--label-text-color);
+    margin-right: 0.5em;
+}
+
+.weather-section {
+    text-align: center;
+}
+
+#weather-svg-icon {
+    display: block;
+    margin: 0 auto 0.75em auto;
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    background-color: var(--header-footer-bg-color);
+    padding: 1.5em 1em;
+    text-align: center;
+    border-top: 1px solid var(--section-border-color);
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 0.3em;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}

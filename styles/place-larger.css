@@ -1,0 +1,42 @@
+body {
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: start;
+}
+
+.hero {
+    grid-column: 1 / -1;
+    margin-bottom: 1em;
+}
+
+.data-section,
+.weather-section {
+    text-align: left;
+}
+
+.data-section h2,
+.weather-section h2 {
+    text-align: left;
+}
+
+.data-section p,
+.weather-section p {
+    text-align: left;
+}
+
+#weather-svg-icon {
+    display: none;
+}
+
+.weather-section h2::after {
+    content: " ⛅";
+    font-size: 1em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moab, Utah</title>
+    <meta name="description" content="Key information and weather for Moab, Utah, a hub for outdoor adventure.">
+    <meta name="author" content="Sadler N. Kyne">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/place-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Moab, Utah</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/delicate_arch_hero.webp" media="(min-width: 768px)">
+                <source srcset="images/download.webp" media="(min-width: 320px)">
+                <img src="images/download.webp" alt="Scenic view of Delicate Arch in Moab, Utah" loading="lazy" width="540" height="312">
+            </picture>
+        </div>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> Approx. 12.5 sq mi (32.4 km²)</p>
+            <p><strong>Population:</strong> Approx. 5,300</p>
+            <p><strong>Elevation:</strong> 4,026 ft (1,227 m)</p>
+            <p><strong>Founded:</strong> 1878</p>
+            <p><strong>Region:</strong> Southeastern Utah</p>
+            <p><strong>Known For:</strong> National Parks, Outdoor Recreation</p>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Current weather icon" id="weather-svg-icon" width="50" height="50">
+            <p><strong>Temperature:</strong> <span id="temperature">68</span>&deg;F</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind Speed:</strong> <span id="windspeed">7</span> mph</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sadler N. Kyne, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
