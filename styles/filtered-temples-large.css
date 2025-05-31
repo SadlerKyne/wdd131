@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+    header {
+        padding: 1em 2em;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        width: auto;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: #333336;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: large;
+        padding: 0.5em 1em;
+        transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    nav ul li a:visited {
+        color: #0066CC;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        color: #000000;
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 2em auto;
+        padding: 2em;
+    }
+    
+    main h2 {
+        font-size: 2.2em;
+    }
+
+    #temple-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    #temple-grid-container figure {
+        flex: 1 1 300px;
+    }
+
+    #temple-grid-container figure:hover {
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    }
+
+    #temple-grid-container figure:hover img {
+        transform: scale(1.03);
+    }
+}
