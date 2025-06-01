@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review Form - KynesDesign</title>
+    <meta name="description" content="Submit your product review for KynesDesign products.">
+    <meta name="author" content="Sadler N. Kyne">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/form-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="content-container">
+        <form action="review.html" method="get" id="reviewForm">
+            <fieldset>
+                <legend>Product Information</legend>
+                <label for="productName">Product Name*</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <label>Overall Rating*</label>
+                <div class="rating-stars">
+                    <input type="radio" id="star5" name="overallRating" value="5" required><label for="star5" title="5 stars">☆</label>
+                    <input type="radio" id="star4" name="overallRating" value="4" required><label for="star4" title="4 stars">☆</label>
+                    <input type="radio" id="star3" name="overallRating" value="3" required><label for="star3" title="3 stars">☆</label>
+                    <input type="radio" id="star2" name="overallRating" value="2" required><label for="star2" title="2 stars">☆</label>
+                    <input type="radio" id="star1" name="overallRating" value="1" required><label for="star1" title="1 star">☆</label>
+                </div>
+
+                <label for="installationDate">Date of Installation*</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Features</legend>
+                <label>Which features did you find useful? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <div><input type="checkbox" id="featureDurability" name="usefulFeatures" value="durability"><label for="featureDurability">Durability</label></div>
+                    <div><input type="checkbox" id="featureEaseOfUse" name="usefulFeatures" value="easeOfUse"><label for="featureEaseOfUse">Ease of Use</label></div>
+                    <div><input type="checkbox" id="featurePerformance" name="usefulFeatures" value="performance"><label for="featurePerformance">Performance</label></div>
+                    <div><input type="checkbox" id="featureDesign" name="usefulFeatures" value="design"><label for="featureDesign">Design</label></div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Review</legend>
+                <label for="writtenReview">Written Review (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview" rows="6"></textarea>
+
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sadler N. Kyne, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
