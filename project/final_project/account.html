@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KynesDesign - My Account</title>
+    <meta name="description" content="Manage your KynesDesign account, view orders, and update your information.">
+    <meta name="author" content="Sadler N. Kyne">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/site-plan.png" type="image/png">
+    <meta property="og:title" content="My Account - KynesDesign">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Manage your KynesDesign account.">
+    <meta property="og:image" content="https://SadlerKyne.github.io/wdd131/final_project/images/og-home.webp">
+    <meta property="og:url" content="https://SadlerKyne.github.io/wdd131/final_project/index.html">
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/account.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content-wrapper">
+            <img src="images/hero-image.webp" alt="KynesDesign Logo" id="siteLogo">
+            <div class="site-title">KynesDesign</div>
+        </div>
+        <nav>
+            <button id="menuButton" class="cursor-pointer" aria-label="Toggle Menu">☰</button>
+            <ul id="primaryNav" class="hide-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="active"><a href="#">My Account</a></li>
+            </ul>
+            <a href="index.html#product-display" class="cta-nav-button">Order now</a>
+        </nav>
+    </header>
+    <main class="account-main">
+        <h1 class="text-center">My Account</h1>
+        <p class="dashboard-summary text-center">You have <span id="liked-count" class="font-bold">0</span> favorited items.</p>
+        <div class="account-dashboard">
+            <div class="dashboard-grid">
+            </div>
+            <aside class="dashboard-sidebar card">
+                <div class="contact-info text-center">
+                    <img src="images/profile-pic.jpeg" alt="User profile picture" class="profile-pic">
+                    <h4 class="font-bold">Jess Bezos</h4>
+                    <p>Amazon</p>
+                    <p>215 Vine St<br>Redmond, Washington<br>United States</p>
+                    <p>1 555-555-5555</p>
+                    <p>shawkyn@amazon.com</p>
+                    <a href="#" class="edit-link">Edit Information</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="content-wrapper">
+            <p>&copy;<span id="currentYear"></span> Sadler N. Kyne - United States of America</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+            </div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
